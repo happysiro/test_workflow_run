@@ -2,7 +2,7 @@ name: hello workflow_run
 on:
   workflow_run:
     workflows: ["hello world"]
-    branches: ["main", "test"]
+    branches: ["main", "test", "fix"]
     types:
       - completed
 
