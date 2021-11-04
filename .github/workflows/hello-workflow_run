@@ -1,4 +1,4 @@
-name: hello world
+name: hello workflow_run
 on:
   workflow_run:
     workflows: ["hello world"]
