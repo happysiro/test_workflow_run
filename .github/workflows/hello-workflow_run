@@ -1,0 +1,14 @@
+name: hello world
+on:
+  workflow_run:
+    workflows: ["hello world"]
+    branches: ["main", "test"]
+    types:
+      - completed
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello workflow run!"
